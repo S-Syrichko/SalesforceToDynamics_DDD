@@ -1,0 +1,11 @@
+﻿using CCI_SalesforceToDynamics.Infrastructure.Salesforce.SOQL;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace CCI_SalesforceToDynamics.Domain.Repositories
+{
+    public interface ISalesforceOpportunityLineRepository
+    {
+        Task<List<OpportunityLineSOQL>> GetByOpportunityIdAsync(string opportunityId);
+    }
+}
